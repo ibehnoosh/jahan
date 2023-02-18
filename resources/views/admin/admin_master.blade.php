@@ -1,10 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
-
     <meta charset="utf-8" />
-    <title>Dashboard | Upcube - Admin & Dashboard Template</title>
+    <title>{{env('APP_NAME')}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
@@ -21,11 +20,11 @@
     <link href="{{asset('backend/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap Css -->
-    <link href="{{asset('backend/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/assets/css/bootstrap-rtl.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="{{asset('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/assets/css/icons-rtl.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="{{asset('backend/assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/assets/css/app-rtl.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -709,7 +708,7 @@
     <div data-simplebar class="h-100">
         <div class="rightbar-title d-flex align-items-center px-3 py-4">
 
-            <h5 class="m-0 me-2">Settings</h5>
+            <h5 class="m-0 me-2">تنظیمات</h5>
 
             <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
                 <i class="mdi mdi-close noti-icon"></i>
@@ -718,7 +717,7 @@
 
         <!-- Settings -->
         <hr class="mt-0" />
-        <h6 class="text-center mb-0">Choose Layouts</h6>
+        <h6 class="text-center mb-0">انتخاب قالب</h6>
 
         <div class="p-4">
             <div class="mb-2">
@@ -727,7 +726,7 @@
 
             <div class="form-check form-switch mb-3">
                 <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
-                <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                <label class="form-check-label" for="light-mode-switch">روشن</label>
             </div>
 
             <div class="mb-2">
@@ -735,7 +734,7 @@
             </div>
             <div class="form-check form-switch mb-3">
                 <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="{{asset('backend/assets/css/bootstrap-dark.min.css')}}" data-appStyle="{{asset('backend/assets/css/app-dark.min.css')}}">
-                <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                <label class="form-check-label" for="dark-mode-switch">تاریک</label>
             </div>
 
             <div class="mb-2">
@@ -743,7 +742,7 @@
             </div>
             <div class="form-check form-switch mb-5">
                 <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="{{asset('backend/assets/css/app-rtl.min.css')}}">
-                <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                <label class="form-check-label" for="rtl-mode-switch">راست چین</label>
             </div>
 
 
