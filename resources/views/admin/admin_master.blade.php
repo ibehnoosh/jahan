@@ -487,7 +487,7 @@
                             <span>{{__('menu.BasicInfo')}}</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="{{route('category')}}">{{__('menu.Category')}}</a></li>
+                            <li><a href="{{route('categories.index')}}">{{__('menu.Category')}}</a></li>
                         </ul>
                     </li>
 
