@@ -1,24 +1,11 @@
-@extends('admin.admin_master')
-@section('admin')
-<div class="page-content">
-        <div class="container-fluid">
-<div class="container mt-2">
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>{{__('menu.Category')}}</h2>
-        </div>
-        <div class="pull-right mb-2">
-            <a class="btn btn-success" href="{{ route('categories.create') }}">{{__('fa.Create')}}</a>
-        </div>
-    </div>
-</div>
+<h2>{{__('menu.Category')}}</h2>
+<a class="btn btn-success" href="{{ route('categories.create') }}">{{__('fa.Create')}}</a>
 @if ($message = Session::get('success'))
     <div class="alert alert-success">
         <p>{{ $message }}</p>
     </div>
 @endif
-<table class="table table-responsive table-bordered table-sm">
+<table border="1">
     <thead>
     <tr>
         <th>#</th>
@@ -39,7 +26,7 @@
             <td>{{ $category->has_private }}</td>
             <td>
                 <form action="{{ route('categories.destroy',$category->id) }}" method="Post">
-                    <a class="btn btn-primary" href="{{ route('categories.edit',$category->id) }}">{{__('fa.Edit')}}</a>
+                    <a class="btn btn-primary" href="{{ route('categories.create').'/'.$category->id }}">{{__('fa.Edit')}}</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">{{__('fa.Delete')}}</button>
@@ -49,6 +36,3 @@
     @endforeach
     </tbody>
 </table>
-</div>
-        </div></div>
-@endsection
